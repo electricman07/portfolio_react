@@ -1,0 +1,86 @@
+/* Nav Bar */
+.main-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  transition: 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 2rem;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+
+  div {
+    height: 0.25rem;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Rotate first bar */
+  .active .bar1 {
+    transform: translateY(0.6rem) rotate(-45deg);
+  }
+
+  /* Fade out the second bar */
+  .active .bar2 {
+    opacity: 0;
+  }
+
+  /* Rotate last bar */
+  .active .bar3 {
+    transform: translateY(-0.75rem) rotate(45deg);
+  }
+}
+
+.nav-links-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-right: 10px;
+
+  .nav-link {
+    padding: 10px 15px;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    &:active {
+      transform: translateX(-15deg);
+    }
+  }
+}
+
+.nav-active {
+  background-color: var(--primary-color);
+  box-shadow: 5px -1px 12px -5px grey;
+}
+
+.active {
+  font-weight: 700;
+}
