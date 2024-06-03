@@ -24,7 +24,7 @@ const Navigation = () => {
     <Fragment>
       <nav className="main-navbar" id="navbar">
         <Link className="logo-container" to="/">
-          {/* <Logo className="logo" /> */}
+          <img src={Logo} alt="Logo" className="logo" />
           <h2>Glen Popowich</h2>
         </Link>
 
