@@ -38,8 +38,11 @@ const Navigation = () => {
             <div className={`bar3 ${showMenu ? "bar3-active" : ""}`}></div>
           </div>
         </div>
-        <div className="nav-links-container" onClick={mobileMenu}>
-          <Link className="nav-Link active" to="/">
+        <div
+          className={`nav-links-container ${showMenu ? "btn-active" : ""}`}
+          onClick={mobileMenu}
+        >
+          <Link className="nav-link active" to="/">
             Home
           </Link>
           <Link className="nav-link" to="/#services">

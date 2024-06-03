@@ -69,7 +69,7 @@
       font-weight: 700;
     }
 
-    &:active {
+    &:visited {
       transform: translateX(-15deg);
     }
   }
@@ -82,4 +82,40 @@
 
 .active {
   font-weight: 700;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1065px) {
+  .nav-links-container {
+    position: fixed;
+    right: -110%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+
+    &.btn-active {
+      right: 0;
+    }
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .menu-icon {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo-container h2 {
+    display: none;
+  }
 }
