@@ -30,30 +30,29 @@
   justify-content: space-around;
   cursor: pointer;
   z-index: 10;
-  opacity: 0;
+  opacity: 1;
 
   div {
     height: 0.25rem;
     background-color: black;
     transition: all 0.3s ease-in-out;
   }
-
-  /* Rotate first bar */
-  .active .bar1 {
-    transform: translateY(0.6rem) rotate(-45deg);
-  }
-
-  /* Fade out the second bar */
-  .active .bar2 {
-    opacity: 0;
-  }
-
-  /* Rotate last bar */
-  .active .bar3 {
-    transform: translateY(-0.75rem) rotate(45deg);
-  }
 }
 
+/* Rotate first bar */
+.bar1-active {
+  transform: translateY(0.6rem) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.bar2-active {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.bar3-active {
+  transform: translateY(-0.75rem) rotate(45deg);
+}
 .nav-links-container {
   width: 50%;
   height: 100%;
