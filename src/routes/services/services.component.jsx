@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-import "./services.styles.scss";
+import "./Services.styles.scss";
 
 const Services = () => {
   return (
