@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Avatar50.png";
 import "./Navigation.styles.scss";
 
@@ -68,7 +68,6 @@ const Navigation = () => {
           </Link>
         </div>
       </nav>
-      <Outlet />
     </Fragment>
   );
 };
