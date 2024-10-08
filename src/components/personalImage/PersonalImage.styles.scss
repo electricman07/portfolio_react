@@ -1,0 +1,18 @@
+.personal-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.personal-image-src {
+  background: rgba(163, 194, 196, 0.3);
+  box-shadow: var(--box-shadow);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+
+  img {
+    overflow: hidden;
+  }
+}
